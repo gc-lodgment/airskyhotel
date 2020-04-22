@@ -45,7 +45,7 @@ function template() {
 		.pipe(browserSync.stream({ match: '**/*.html' }));
 };
 function templateAll() {
-	return src([config.template.src, config.template.parts])
+	return src([config.template.src])
 		.pipe(fileinclude({
 			prefix: '@@',
 			// basepath: '@file'
@@ -113,10 +113,12 @@ function js(){
 		.pipe(dest(config.js.dest))
 		.pipe(browserSync.stream({ match: '**/*.js' }));
 };
-function img() {
+function img(cb) {
 	return src(config.img.src, {since: lastRun(img)})
         .pipe(imagemin())
-		.pipe(dest(config.img.dest));
+        .pipe(dest(config.img.dest));
+        
+    cb();
 }
 function sprite(cb) {
     // var spriteData = src('src/img/sprite/login/*') // custom grouping

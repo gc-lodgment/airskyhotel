@@ -12,7 +12,7 @@ function endVid(){
     var winWid = $(window).width();
     
     if( winWid <= '991' ){
-        var mhtml = '<video id="vidM" playsinline="" webkit-playsinline="" preload="" autoplay="" muted=""><source src="http://img.seabay.co.kr/svc/img/main/seabay_mobile.mp4" type="video/mp4" /></video>';
+        var mhtml = '<video id="vidM" playsinline="" webkit-playsinline="" preload="" autoplay="" muted=""><source src="http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/main/seabay_mobile.mp4" type="video/mp4" /></video>';
         
         $(".vid-area.m .vid-box").empty();
         //$("#vidPc, #player").remove(); 

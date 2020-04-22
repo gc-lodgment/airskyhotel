@@ -1,0 +1,65 @@
+@@include('src/template/svc/include/_head.html')
+</head>
+
+<body>
+
+    @@include('src/template/svc/include/_header.html')
+
+    <div class="restbar">
+        @@include('src/template/svc/include/facilities/_sub_top.html', {
+        "title": "레스토랑",
+        "sub_title": "셰프가 매일 직접 엄선한 신선한 재료들을 사용하여 열정이 살아 숨쉬는 맛있는 뷔페를 제공합니다.<br>모던하고 안락한 분위기에서 최고의 서비스와 함께 정성스럽게 준비한 건강한 음식을 맛보실 수 있습니다."
+        })
+        <div class="sub container">
+            <div class="sub_item_box">
+                <div class="sub_item_wrap">
+                    <div class="sub_item">
+                        <div class="slick_slider">
+                            <div class="icon-prev"><i class="icon-33"></i></div>
+                            <div class="icon-next"><i class="icon-32"></i></div>
+                            <div class="slick_basic">
+                                <div><img src="http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/facilities/restaurant/01.jpg" alt="레스토랑사진"></div>
+                                <div><img src="http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/facilities/restaurant/02.jpg" alt="레스토랑사진"></div>
+                                <div><img src="http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/facilities/restaurant/03.jpg" alt="레스토랑사진"></div>
+                                <div><img src="http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/facilities/restaurant/04.jpg" alt="레스토랑사진"></div>
+                                <div><img src="http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/facilities/restaurant/05.jpg" alt="레스토랑사진"></div>
+                            </div>
+                        </div>
+                        <div class="item_info">
+                            <div class="info_wrap">
+                                <h5 class="info_title">위치안내</h5>
+                                <div class="info_content">2층</div>
+                            </div>
+                            <div class="info_wrap">
+                                <h5 class="info_title">운영시간</h5>
+                                <div class="info_content">
+                                    <span class="sh_small">주중 / 주말 오전 07:00 ~ 10:00</span><br />
+                                </div>
+                            </div>
+                            <div class="info_wrap">
+                                <h5 class="info_title">조식요금</h5>
+                                <div class="info_content">
+                                    <span class="sh_small">주중/주말 공통</span><br />
+                                    <span class="sh_small">* 대인: 22,000원</span><br>
+                                    <span class="sh_small">* 소인: 11,000원(13세 미만)</span><br>
+                                    <span class="sh_small">※ 조식 요금은 현장 상황에 의해 변경될 수 있습니다.</span>
+                                </div>
+                            </div>
+                            <div class="info_wrap">
+                                <h5 class="info_title">예약문의</h5>
+                                <div class="info_content">
+                                    전화 : <span class="sh_small">1666-1243</span><br />
+                                    이메일 : <span class="sh_small">airskyhotel@ebiznetworks.co.kr</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @@include('src/template/svc/include/_footer.html')
+</body>
+
+</html>

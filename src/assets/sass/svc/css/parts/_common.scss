@@ -2,3 +2,27 @@
 
 @import "./variables";
 @import "./mixins";
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.c-black {
+    color: #333333 !important;
+}
+
+.fz-16 {
+    font-size: 16px !important;
+}
+
+.bk-menu {
+    background: #978262 !important;
+}
+
+.bk-menu .bk-list li {
+    border-top-color: #fff !important;
+}
+
+.bk-menu .bk-list li a:hover {
+    background: darken(#978262, 7%) !important;
+}

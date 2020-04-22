@@ -1,3 +1,5 @@
+@import '../parts/variables';
+
 @charset "utf-8";
 
 .br_sub {
@@ -2416,7 +2418,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     color: #ffffff;
     top: 0;
     left: 0;
-    background: url('http://img.seabay.co.kr/svc/img/pattern/opacity50-BK.png');
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/pattern/opacity50-BK.png');
     cursor: wait
 }
 
@@ -2442,7 +2444,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     z-index: 9999;
     top: 0;
     left: 0;
-    background: url('http://img.seabay.co.kr/svc/img/pattern/opacity50-WT.png');
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/pattern/opacity50-WT.png');
     cursor: wait
 }
 
@@ -2610,7 +2612,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 .b_sprite01 {
-    background: url('http://img.seabay.co.kr/svc/img/sprite/sprite01.png') no-repeat;
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/sprite/sprite01.png') no-repeat;
     display: inline-block
 }
 
@@ -2619,7 +2621,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     .b_sprite01 {
-        background: url('http://img.seabay.co.kr/svc/img/sprite/sprite01.svg') no-repeat
+        background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/sprite/sprite01.svg') no-repeat
     }
 }
 
@@ -2640,7 +2642,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 .jssor-sprite {
-    background: url('http://img.seabay.co.kr/svc/img/sprite/sprite01.png') no-repeat;
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/sprite/sprite01.png') no-repeat;
     display: inline-block;
     position: absolute;
     cursor: pointer;
@@ -2652,7 +2654,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     .jssor-sprite {
-        background: url('http://img.seabay.co.kr/svc/img/sprite/sprite01.svg') no-repeat
+        background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/sprite/sprite01.svg') no-repeat
     }
 }
 
@@ -2686,7 +2688,7 @@ a:hover {
     position: fixed;
     top: 0;
     left: 0;
-    background: url('http://img.seabay.co.kr/svc/img/pattern/opacity80-BK.png');
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/pattern/opacity80-BK.png');
     z-index: 100000;
     display: none;
     overflow-x: auto;
@@ -2923,7 +2925,7 @@ header .top_line .box .face {
 header .top_line .box .face a {
     width: 17px;
     height: 17px;
-    background: url('http://img.seabay.co.kr/svc/img/symbol/face.png')
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/face.png')
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -2931,7 +2933,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     header .top_line .box .face a {
-        background: url('http://img.seabay.co.kr/svc/img/symbol/face.svg') no-repeat
+        background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/face.svg') no-repeat
     }
 }
 
@@ -2948,7 +2950,7 @@ header .top_line .box .blog {
 header .top_line .box .blog a {
     width: 17px;
     height: 17px;
-    background: url('http://img.seabay.co.kr/svc/img/symbol/blog.png')
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/blog.png')
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -2956,7 +2958,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     header .top_line .box .blog a {
-        background: url('http://img.seabay.co.kr/svc/img/symbol/blog.svg') no-repeat
+        background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/blog.svg') no-repeat
     }
 }
 
@@ -2973,7 +2975,7 @@ header .top_line .box .insta {
 header .top_line .box .insta a {
     width: 17px;
     height: 17px;
-    background: url('http://img.seabay.co.kr/svc/img/symbol/insta.png')
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/insta.png')
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -2981,7 +2983,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     header .top_line .box .insta a {
-        background: url('http://img.seabay.co.kr/svc/img/symbol/insta.svg') no-repeat
+        background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/insta.svg') no-repeat
     }
 }
 
@@ -3062,7 +3064,7 @@ header .top_logo {
     display: inline-block;
     /* width: 400px; */
     /* height: 90px; */
-    /* background: url('http://img.seabay.co.kr/svc/img/symbol/top_logo.png') */
+    /* background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/top_logo.png') */
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -3070,7 +3072,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     header .top_logo {
-        background: url('http://img.seabay.co.kr/svc/img/symbol/top_logo.svg') no-repeat
+        background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/top_logo.svg') no-repeat
     }
 }
 
@@ -3081,7 +3083,7 @@ header .top_logo_s {
     position: absolute;
     top: 6px;
     left: 45px;
-    background: url('http://img.seabay.co.kr/svc/img/symbol/top_logo_s.png') */
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/top_logo_s.png') */
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -3089,7 +3091,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     header .top_logo_s {
-        background: url('http://img.seabay.co.kr/svc/img/symbol/top_logo_s.svg') no-repeat
+        background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/top_logo_s.svg') no-repeat
     }
 }
 
@@ -3117,7 +3119,7 @@ header .top_logo_c {
     display: none;
     left: 50%;
     margin-left: -45px; */
-    /* background: url('http://img.seabay.co.kr/svc/img/symbol/m_top_logo.png') no-repeat center / 90px; */
+    /* background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/m_top_logo.png') no-repeat center / 90px; */
 }
 
 header .top_logo_c>img {
@@ -3130,7 +3132,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     header .top_logo_c {
-        /* background: url('http://img.seabay.co.kr/svc/img/symbol/top_logo.png') no-repeat center / 55px; */
+        /* background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/top_logo.png') no-repeat center / 55px; */
     }
 }
 
@@ -3205,7 +3207,7 @@ header .mlang .l li {
 }
 
 header .mlang .l li.bg {
-    background: url('http://img.seabay.co.kr/svc/img/pattern/opacity80-WT.png')
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/pattern/opacity80-WT.png')
 }
 
 header .top_navi .navi_scroll {
@@ -3213,7 +3215,7 @@ header .top_navi .navi_scroll {
     visibility: hidden;
     width: 100%;
     height: 40px;
-    background: url('http://img.seabay.co.kr/svc/img/pattern/opacity80-WT.png');
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/pattern/opacity80-WT.png');
     position: relative;
     top: 0;
     left: 0;
@@ -3257,7 +3259,7 @@ header .top_navi .navi_scroll .left_overlay {
     position: fixed;
     top: 0;
     left: 0;
-    background: url('http://img.seabay.co.kr/svc/img/pattern/opacity70-BK.png');
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/pattern/opacity70-BK.png');
     z-index: 2
 }
 
@@ -3265,7 +3267,7 @@ header .top_navi .navi_scroll .left_overlay {
     header .top_navi .navi_scroll .list {
         width: 300px;
         height: 100%;
-        background: url('http://img.seabay.co.kr/svc/img/pattern/opacity80-WT.png');
+        background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/pattern/opacity80-WT.png');
         position: fixed;
         left: -350px;
         top: 0;
@@ -3284,7 +3286,7 @@ header .top_navi .navi_scroll .list .side_toggle {
     border: none;
     background: none;
     text-align: right;
-    background: url('http://img.seabay.co.kr/svc/img/pattern/opacity90-WT.png');
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/pattern/opacity90-WT.png');
     margin: 0;
     padding: 6px 15px;
     outline: none;
@@ -3437,7 +3439,7 @@ header .top_navi .navi_scroll .list .sns_btn.face {
 }
 
 header .top_navi .navi_scroll .list .sns_btn.face .sns_icon {
-    background: url('http://img.seabay.co.kr/svc/img/symbol/face.png')
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/face.png')
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -3445,7 +3447,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     header .top_navi .navi_scroll .list .sns_btn.face .sns_icon {
-        background: url('http://img.seabay.co.kr/svc/img/symbol/face.svg') no-repeat
+        background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/face.svg') no-repeat
     }
 }
 
@@ -3454,7 +3456,7 @@ header .top_navi .navi_scroll .list .sns_btn.blog {
 }
 
 header .top_navi .navi_scroll .list .sns_btn.blog .sns_icon {
-    background: url('http://img.seabay.co.kr/svc/img/symbol/blog.png')
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/blog.png')
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -3462,7 +3464,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     header .top_navi .navi_scroll .list .sns_btn.blog .sns_icon {
-        background: url('http://img.seabay.co.kr/svc/img/symbol/blog.svg') no-repeat
+        background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/blog.svg') no-repeat
     }
 }
 
@@ -3471,7 +3473,7 @@ header .top_navi .navi_scroll .list .sns_btn.insta {
 }
 
 header .top_navi .navi_scroll .list .sns_btn.insta .sns_icon {
-    background: url('http://img.seabay.co.kr/svc/img/symbol/insta.png')
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/insta.png')
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -3479,7 +3481,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     header .top_navi .navi_scroll .list .sns_btn.insta .sns_icon {
-        background: url('http://img.seabay.co.kr/svc/img/symbol/insta.svg') no-repeat
+        background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/insta.svg') no-repeat
     }
 }
 
@@ -3725,7 +3727,7 @@ footer .footer_logo {
     margin-top: -70px;
     width: 139px;
     height: 90px;
-    background: url('http://img.seabay.co.kr/svc/img/symbol/footer_logo.png');
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/footer_logo.png');
     float: right
 }
 
@@ -3744,7 +3746,7 @@ footer .footer_logo {
 .bottom_hub a {
     width: 85px;
     height: 25px;
-    background: url('http://img.seabay.co.kr/svc/img/symbol/footer_hub.png');
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/footer_hub.png');
     display: block;
     margin: 0 auto
 }
@@ -3754,12 +3756,12 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     .bottom_hub a {
-        background: url('http://img.seabay.co.kr/svc/img/symbol/footer_hub.svg') no-repeat
+        background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/footer_hub.svg') no-repeat
     }
 }
 
 .body_section .main_reservation {
-    background: #1178bc;
+    background: $reservation-bar-bg;
     padding: 13px 0
 }
 
@@ -3854,14 +3856,14 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 .body_section .main_reservation .inputs .date_input {
-    background: #2986c3;
+    background: $reservation-bar-input;
     position: relative
 }
 
 .body_section .main_reservation .inputs .date_input input {
     width: 100%;
     height: 40px;
-    background: #2986c3;
+    background: $reservation-bar-input;
     border: none;
     outline: none;
     padding: 10px
@@ -3895,7 +3897,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .body_section .main_reservation .inputs .select_input {
     width: 100%;
     height: 40px;
-    background: #2986c3;
+    background: $reservation-bar-input;
     border: none;
     padding: 10px
 }
@@ -3923,7 +3925,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .body_section .main_reservation .inputs button {
     width: 100%;
     height: 40px;
-    background: #0a4871;
+    background: $reservation-bar-btn;
     border: none;
     padding: 10px
 }
@@ -4152,7 +4154,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     table-layout: fixed;
     border-top: 1px solid #565656;
     padding: 5px 2px;
-    background: url('http://img.seabay.co.kr/svc/img/main/main_bg_notice.jpg') no-repeat right bottom
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/main/main_bg_notice.jpg') no-repeat right bottom
 }
 
 @media (max-width: 1199px) {
@@ -4425,8 +4427,35 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     border: 1px solid #f5f5f5
 }
 
+.value_map .sh_small_wrapper {
+    padding: 25px;
+    background-color: #f5f5f5;
+
+    .sh_small {
+        letter-spacing: -0.3px;
+        line-height: 1.8;
+    }
+}
+
 .sub .sh_small {
-    font-size: 14px
+    font-size: 14px;
+
+    &.title {
+        &:not(:nth-of-type(1)) {
+            margin-top: 15px;
+        }
+
+        margin-bottom: 5px;
+    }
+
+    .subwaytime-btn {
+        margin-top: 10px;
+        display: inline-block;
+        padding: 2px 8px;
+        background-color: #7a7a7a;
+        color: #ffffff;
+        font-weight: 300;
+    }
 }
 
 @media (max-width: 767px) {
@@ -4824,7 +4853,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     color: #fff;
     text-align: center;
     vertical-align: middle;
-    background: url('http://img.seabay.co.kr/svc/img/main/about_value_bg.jpg') no-repeat center fixed
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/about/about_value_bg.jpg') no-repeat center fixed
 }
 
 @media (max-width: 767px) {
@@ -4926,6 +4955,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 }
 
 @media (max-width: 767px) {
+
     .about_value .about_value_item_wrap {
         padding: 1% 2%
     }
@@ -5071,6 +5101,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     }
 }
 
+.factsheet .factsheet_info_top,
 .value_map .value_map_info_top {
     margin-top: 3%;
     padding: 17px 25px 25px 25px;
@@ -5079,6 +5110,8 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 }
 
 @media (max-width: 767px) {
+
+    .factsheet .factsheet_info_top,
     .value_map .value_map_info_top {
         padding: 1% 2%
     }
@@ -5130,15 +5163,15 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     }
 }
 
-.value_map .value_map_info_item .value_map_info_item_wrap table {
+.value_map .value_map_info table {
     width: 100%;
     margin-bottom: 10px;
     border: 1px solid #d9d9d9;
     border-collapse: collapse
 }
 
-.value_map .value_map_info_item .value_map_info_item_wrap table th,
-.value_map .value_map_info_item .value_map_info_item_wrap table td {
+.value_map .value_map_info table th,
+.value_map .value_map_info table td {
     padding: 1% 2%;
     text-align: left;
     border: 1px solid #d9d9d9;
@@ -5146,12 +5179,12 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     text-align: center
 }
 
-.value_map .value_map_info_item .value_map_info_item_wrap table th {
+.value_map .value_map_info table th {
     width: 10%;
     background-color: #ebf4ff
 }
 
-.value_map .value_map_info_item .value_map_info_item_wrap table td {
+.value_map .value_map_info table td {
     width: 15%
 }
 
@@ -5164,25 +5197,40 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     width: auto;
 }
 
+.value_map .value_map_info .map-tbl {
+    // table-layout: fixed;
+
+    col:nth-child(1) {
+        width: 18%;
+    }
+
+    col:nth-child(2) {
+        width: 87%;
+    }
+
+    td {
+        text-align: left;
+    }
+}
 
 @media (max-width: 1199px) {
-    .value_map .value_map_info_item .value_map_info_item_wrap table {
+    .value_map .value_map_info table {
         font-size: 10px
     }
 
-    .value_map .value_map_info_item .value_map_info_item_wrap table th,
-    .value_map .value_map_info_item .value_map_info_item_wrap table td {
+    .value_map .value_map_info table th,
+    .value_map .value_map_info table td {
         padding: 5px
     }
 }
 
 @media (max-width: 767px) {
-    .value_map .value_map_info_item .value_map_info_item_wrap table {
+    .value_map .value_map_info table {
         font-size: 8px
     }
 
-    .value_map .value_map_info_item .value_map_info_item_wrap table th,
-    .value_map .value_map_info_item .value_map_info_item_wrap table td {
+    .value_map .value_map_info table th,
+    .value_map .value_map_info table td {
         padding: 3px
     }
 
@@ -6329,7 +6377,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     display: block;
     top: 0;
     left: 0;
-    background: url('http://img.seabay.co.kr/svc/img/pattern/opacity50-BK.png')
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/pattern/opacity50-BK.png')
 }
 
 .room_list .box .thumb:hover>a>div i {
@@ -7003,7 +7051,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 
 .rsv_result_box .top {
     background: #2F2F2F;
-    background-image: url('http://img.seabay.co.kr/svc/img/pattern/pattern.png');
+    background-image: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/pattern/pattern.png');
     text-align: center;
     padding: 10px
 }
@@ -7179,7 +7227,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     border-radius: 50%;
     -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-    background: url('http://img.seabay.co.kr/svc/img/symbol/facelike.svg');
+    background: url('http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/symbol/facelike.svg');
     z-index: 10;
     display: none
 }
@@ -7217,7 +7265,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    background: url(http://img.seabay.co.kr/svc/img/main/bg_main_re.png) repeat;
+    background: url(http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/main/bg_main_re.png) repeat;
 }
 
 .main .vid-area {
@@ -7264,7 +7312,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     .main .vid-area.m {
         position: absolute;
         display: block;
-        background: url(http://img.seabay.co.kr/svc/img/main/bg_main_m.jpg) no-repeat center;
+        background: url(http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/main/bg_main_m.jpg) no-repeat center;
         background-size: cover;
     }
 
@@ -7307,7 +7355,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     .main .vid-area.pc {
         display: block;
         top: 0;
-        background: url(http://img.seabay.co.kr/svc/img/main/bg_main.jpg) no-repeat center;
+        background: url(http://design.ebiznetworks.co.kr/joon/airskyhotel/img/svc/img/main/bg_main.jpg) no-repeat center;
         background-size: cover;
     }
 
