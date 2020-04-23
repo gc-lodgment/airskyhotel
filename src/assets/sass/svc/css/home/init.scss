@@ -1,6 +1,10 @@
 @charset 'utf-8';
 @import 'src/assets/sass/svc/css/parts/common';
 
+// body.main {
+//     // background-color: $main-bg;
+// }
+
 @mixin ico-plus-cont($c: #000) {
     display: inline-block;
     position: relative;
@@ -71,11 +75,24 @@
             background: #fff;
         }
     }
+
+    &.theme {
+        .ico-wrap {
+            border: 1px solid $theme-color;
+        }
+
+        .ico-bar {
+            background: $theme-color;
+        }
+
+    }
 }
 
 @media (min-width: 992px) {
     .notice-sec {
-        margin-top: 40px;
+        // margin-top: 40px;
+        padding: 40px 0;
+        background-color: $main-bg;
 
         .group {
             background: #fff;
@@ -176,68 +193,99 @@
         }
     }
 
+    .sec-header-type1 {
+        text-align: center;
+        padding-top: 35px;
+
+        .title {
+            font-size: 28px;
+            color: #9e7351;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .subtitle {
+            margin: 0;
+            // margin-bottom: 5px;
+            font-size: 16px;
+            color: #525252;
+        }
+    }
+
     .rooms-sec {
-        margin-bottom: 100px;
+        background-color: #fff;
 
-        .rooms-wrap {
-            .rooms-list {
-                position: relative;
-                margin-left: -15px;
-                margin-right: -15px;
+        .rooms-list {
+            position: relative;
+            position: relative;
+            // padding-left: 5px;
+            // padding-right: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
 
-                .rooms-item {
-                    float: left;
-                    width: 33.33%;
-                    padding: 0 15px;
-                    margin-top: 35px;
+            .rooms-item {
+                width: calc(50% - 10px);
+                margin-top: 20px;
 
-                    .link {
-                        .title {
-                            letter-spacing: -0.5px;
+                .link {
+                    .title {
+                        margin-top: 10px;
+                        letter-spacing: -0.5px;
 
-                            .lg,
-                            .sm {
-                                @include va;
-                            }
-
-                            .lg {
-                                font-size: 20px;
-                                color: $fg-blue;
-                            }
-
-                            .sm {
-                                font-size: 14px;
-                                margin-left: 3px;
-                                top: -1px;
-                            }
-
-                            .btn-more {
-                                @include float(right);
-                                display: inline-block;
-                                padding: 5px 8px;
-                                background: $bg-blue;
-                                font-size: 13px;
-                                color: #fff;
-
-                                .ico-plus-cont {
-                                    .ico-wrap {
-                                        @include sizes(18px)
-                                    }
-
-                                    .ico-body {
-                                        @include sizes(10px)
-                                    }
-                                }
-                            }
+                        .lg,
+                        .sm {
+                            @include va;
+                            font-size: 20px;
                         }
 
-                        .content {
-                            margin-top: 10px;
-                            border: 1px solid #9c9c9c;
+                        .lg {
+                            color: $fg-blue;
                         }
+
+                        .sm {
+                            margin-left: 10px;
+                        }
+
+                        .desc {
+                            font-size: 16px;
+                            color: #525252;
+                        }
+                    }
+
+                    .text {
+                        margin-top: 10px;
+                        font-size: 16px;
+                        color: #525252;
+                        letter-spacing: -0.5px;
+                    }
+
+                    .content {
+                        margin-top: 10px;
+                        border: 1px solid #9c9c9c;
                     }
                 }
             }
+        }
+
+        .rooms-wrap {
+            padding-bottom: 40px;
+
+        }
+
+        .facil-wrap {
+            padding-bottom: 40px;
+
+            .rooms-list {
+
+                .rooms-item {
+                    width: calc(25% - 10px);
+                }
+            }
+        }
+
+        .surroundings-content {
+            background-color: #f1f1f1;
         }
     }
 }
@@ -254,50 +302,15 @@
     }
 
     .rooms-sec {
-        .rooms-wrap {
+        .group {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .facil-wrap {
             .rooms-list {
-                margin-left: 0;
-                margin-right: 0;
-
                 .rooms-item {
-                    .link {
-                        .title {
-
-                            .lg,
-                            .sm {
-                                @include va;
-                                letter-spacing: -1px;
-                            }
-
-                            .lg {
-                                font-size: 16px;
-                                color: $fg-blue;
-                            }
-
-                            .sm {
-                                font-size: 12px;
-                            }
-
-                            .btn-more {
-                                @include float(right);
-                                display: inline-block;
-                                padding: 3px 5px;
-                                background: $bg-blue;
-                                font-size: 12px;
-                                color: #fff;
-
-                                .ico-plus-cont {
-                                    .ico-wrap {
-                                        @include sizes(14px)
-                                    }
-
-                                    .ico-body {
-                                        @include sizes(6px)
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    width: calc(50% - 10px);
                 }
             }
         }
@@ -306,7 +319,9 @@
 
 @media (max-width: 991px) {
     .notice-sec {
-        margin-top: 40px;
+        // margin-top: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
 
         .group {
             background: #fff;
@@ -413,57 +428,97 @@
         }
     }
 
+    .sec-header-type1 {
+        text-align: center;
+        padding-top: 25px;
+
+        .title {
+            font-size: 24px;
+            color: #9e7351;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .subtitle {
+            margin: 0;
+            // margin-bottom: 5px;
+            font-size: 16px;
+            color: #525252;
+        }
+    }
+
     .rooms-sec {
-        // margin-top: 5px;
-        margin-bottom: 50px;
+        background-color: #fff;
 
-        .rooms-wrap {
-            .rooms-list {
-                position: relative;
-                padding-left: 5px;
-                padding-right: 5px;
+        .group {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
 
-                .rooms-item {
-                    float: left;
-                    width: 50%;
-                    padding: 0 5px;
-                    margin-top: 15px;
+        .rooms-list {
+            position: relative;
+            position: relative;
+            // padding-left: 5px;
+            // padding-right: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
 
-                    &:nth-child(2n-1) {
-                        clear: both;
+            .rooms-item {
+                width: calc(50% - 5px);
+                margin-top: 10px;
+
+                .link {
+                    .title {
+                        margin-top: 10px;
+                        letter-spacing: -0.5px;
+
+                        .lg,
+                        .sm {
+                            @include va;
+                            font-size: 16px;
+                        }
+
+                        .lg {
+                            color: $fg-blue;
+                        }
+
+                        .sm {
+                            margin-left: 5px;
+                        }
+
+                        .desc {
+                            font-size: 14px;
+                            color: #525252;
+                        }
                     }
 
-                    .link {
-                        .title {
+                    .text {
+                        margin-top: 10px;
+                        font-size: 16px;
+                        color: #525252;
+                        letter-spacing: -0.5px;
+                    }
 
-                            .lg,
-                            .sm {
-                                @include va;
-                                letter-spacing: -1px;
-                            }
-
-                            .lg {
-                                font-size: 16px;
-                                color: $fg-blue;
-                            }
-
-                            .sm {
-                                display: none;
-                                font-size: 12px;
-                            }
-
-                            .btn-more {
-                                display: none !important;
-                            }
-                        }
-
-                        .content {
-                            margin-top: 5px;
-                            border: 1px solid #9c9c9c;
-                        }
+                    .content {
+                        margin-top: 10px;
+                        border: 1px solid #9c9c9c;
                     }
                 }
             }
+        }
+
+        .rooms-wrap {
+            padding-bottom: 20px;
+
+        }
+
+        .facil-wrap {
+            padding-bottom: 40px;
+        }
+
+        .surroundings-content {
+            background-color: #f1f1f1;
         }
     }
 }

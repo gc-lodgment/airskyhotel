@@ -2,13 +2,13 @@
 // --------------
 // Scss변수
 // --------------
-// 주요 폰트 및 벌러
 // 폰트
 $font-ntss: ("Noto Sans KR", Sans-serif);
 $font-nnGothic: ("Nanum Gothic", Sans-serif);
 $font-nnSquare: ("Nanum Square", "NanumSquare", Sans-serif);
 $font-nnSquareR: ("NanumSquareRound", Sans-serif);
 
+// 주요 폰트 및 벌러
 $font-stack: $font-ntss;
 $font-color: #222;
 $primary-color: #337ab7;
@@ -17,6 +17,7 @@ $primary-color-dark: #23527c;
 
 $bk-menu-color: #978262;
 $theme-color: #9e7351;
+$main-bg: #e3dcd8;
 $reservation-bar-bg: #765f4e;
 $reservation-bar-btn: #4a3c31;
 $reservation-bar-input: #836f5f;

@@ -1,6 +1,5 @@
-@import '../parts/variables';
-
 @charset "utf-8";
+@import '../parts/variables';
 
 .br_sub {
     content: '';
@@ -7343,7 +7342,8 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 
     .main .vid-txt-box .vid-txt img {
         width: 75%;
-        max-width: 640px;
+        // max-width: 640px;
+        max-width: 500px;
     }
 }
 
