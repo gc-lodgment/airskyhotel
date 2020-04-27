@@ -438,13 +438,15 @@
             color: #9e7351;
             margin: 0;
             font-weight: 500;
+            letter-spacing: -1px;
         }
 
         .subtitle {
             margin: 0;
             // margin-bottom: 5px;
-            font-size: 16px;
+            font-size: 15px;
             color: #525252;
+            letter-spacing: -1px;
         }
     }
 
@@ -477,7 +479,8 @@
                         .lg,
                         .sm {
                             @include va;
-                            font-size: 16px;
+                            font-size: 15px;
+                            letter-spacing: -1px;
                         }
 
                         .lg {
@@ -486,19 +489,22 @@
 
                         .sm {
                             margin-left: 5px;
+                            font-size: 13px;
+                            letter-spacing: -1.5px;
                         }
 
                         .desc {
-                            font-size: 14px;
+                            font-size: 13px;
                             color: #525252;
+                            letter-spacing: -1px;
                         }
                     }
 
                     .text {
                         margin-top: 10px;
-                        font-size: 16px;
+                        font-size: 15px;
                         color: #525252;
-                        letter-spacing: -0.5px;
+                        letter-spacing: -1px;
                     }
 
                     .content {

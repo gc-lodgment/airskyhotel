@@ -32,7 +32,7 @@
 }
 
 .bk-menu {
-    background: #978262 !important;
+    background: $bk-menu-color !important;
 }
 
 .bk-menu .bk-list li {
@@ -40,7 +40,7 @@
 }
 
 .bk-menu .bk-list li a:hover {
-    background: darken(#978262, 7%) !important;
+    background: darken($bk-menu-color, 7%) !important;
 }
 
 .ft-ntss {

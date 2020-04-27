@@ -3539,7 +3539,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .main .slider_section .slider_container.smain,
 .main .slider_section .slider_container.smain .slides {
     width: 1920px;
-    height: 500px
+    // height: 500px;
+    height: 947px
 }
 
 .main .slider_section .slider_container.mob {
@@ -3555,7 +3556,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .main .slider_section .slider_container.mob,
 .main .slider_section .slider_container.mob .slides {
     width: 720px;
-    height: 500px
+    height: 1000px;
 }
 
 .main .slider_section .jssor-sprite {
