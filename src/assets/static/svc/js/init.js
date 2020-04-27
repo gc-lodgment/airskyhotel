@@ -40,7 +40,7 @@ function vidWH(){
         //console.log('pc');
         //var myPlayer;
         $('.weather').css({'cursor' : 'pointer'}); 
-        $('.vid-wrap, .weather').hover(function(){
+        $('.vid-wrap, .slider_section.main-visual, .weather').hover(function(){
             vid.find('.vid-txt-box').addClass('on');
             $('.weather').addClass('active');
         }, function(){
@@ -52,7 +52,7 @@ function vidWH(){
     }
 	
     //텍스트 클릭시 이동
-    $('.vid-wrap').find('.vid-txt').on('click', function(){
+    $('.vid-wrap, .slider_section.main-visual').find('.vid-txt').on('click', function(){
 		var mainRestTop =	$("#mainRest").offset().top,
             gnbH =	$(".gnb").height();
         var allVar;
