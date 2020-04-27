@@ -42,7 +42,8 @@ function scrollFunc() {
             //console.log('vid');
             winHt = $(window).height(),
                 mainRestH = $('#mainRest').height()
-            mainTop = $('.vid-wrap').height();
+            // mainTop = $('.vid-wrap').height();
+            mainTop = $('.slider_section.main-visual').height();
             var mainMg = 30,
                 mrMg = 6,
                 mrMgM = 15;

@@ -226,4 +226,5 @@ exports.testPathLocal = testPathLocal;
 exports.default = parallel(bSync, watching);
 exports.serve = parallel(series(parallel(template), static, sassDev, img, etc, bSync), watching);
 exports.build = parallel(series(parallel(template), static, sassDev, img, etc, bSync), watching);
+exports.buildNoImg = parallel(series(parallel(template), static, sassDev, etc, bSync), watching);
 exports.test = series(parallel(template), static, sassPrd, img, etc, copyTest, testPathServer, bSyncTest);
