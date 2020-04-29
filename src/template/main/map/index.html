@@ -1,0 +1,149 @@
+@@include('src/template/include/_head.html')
+</head>
+
+<body>
+
+    @@include('src/template/include/_header.html')
+
+    <div class="sub value_map">
+        @@include('src/template/include/about/_sub_top.html', {
+        "title": "오시는길",
+        "sub_title": "아름다운 푸른 동해가 호텔 바로 앞에 펼쳐져 있는 에어스카이호텔로 초대합니다."
+        })
+
+        <div class="value_map_info container">
+            <div class="value_map_info_top">
+                <div class="value_map_info_item_wrap">
+                    <!-- <div class="map_address">
+                        <p><strong>주소</strong>강원도 강릉시 주문진읍 주문로 59</p>
+                        <p><strong>이메일</strong>valuehotelgangneung@ebiznetworks.co.kr</p>
+                        <p><strong>전화</strong>1666-1243</p>
+                    </div> -->
+                    <div id="map_box" class="map_box">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.7212718890446!2d126.57833481558689!3d37.490903336213094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b8380dfed09a3%3A0x296b52d238bffe7a!2sRGB%20Sky%20Hotel!5e0!3m2!1sko!2skr!4v1587536382866!5m2!1sko!2skr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.759197354018!2d128.82323025128431!3d37.88931377963933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3561e2d3f94e13d3%3A0xdcb5349835d460e7!2z67C466WY7Zi47YWU6rCV66aJ!5e0!3m2!1sko!2skr!4v1560937272528!5m2!1sko!2skr" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                    </div>
+                    <br>
+                    <table class="map-tbl">
+                        <colgroup>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <tr>
+                            <th>도로명주소</th>
+                            <td>22410 인천광역시 중구 은하수로29번길 31</td>
+                        </tr>
+                        <tr>
+                            <th>지번주소</th>
+                            <td>22410 인천 중구 중산동 1952-4</td>
+                        </tr>
+                        <tr>
+                            <th>대표번호</th>
+                            <td>031) 720-6200(프론트), 1666-1243(예약실)</td>
+                        </tr>
+                        <tr>
+                            <th>주변버스 정류장</th>
+                            <td>
+                                영종선착장 정류장 (100미터 거리 / 도보 2분) - 사내버스 203번 / 마을버스 중구3번<br>
+                                영종선착장 정류장 (300미터 거리 / 도보 5분) - 사내버스 205번 / 마을버스 중구3번<br>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="value_map_info_item">
+                <div class="value_map_info_item_wrap">
+                    <p><strong>자가용 이용 시</strong></p>
+                    <div class="sh_small_wrapper">
+                        <div class="sh_small c-black title">
+                            ▶인천국제공항고속도로 이용 시
+                        </div>
+                        <div class="sh_small c-black">
+                            인천국제공항고속도로 금산IC(중산동, 영종하늘도시 방면) - 자연대로(운남교차로 방면) - 영종대로 방면 삼거리(좌회전) - 은하수로(우회전) - 은하수로 29번길 (우회전) - 호텔 도착
+                        </div>
+                        <div class="sh_small c-black title">
+                            ▶제2경인고속도로 이용 시
+                        </div>
+                        <div class="sh_small c-black">
+                            제2경인고속도로 영종IC(영종동, 영종선착장, 용유동, 무의’ 방면 - 그린나래지하차도 진입(하늘대로) - 해찬나래지하차도 오른쪽 옆 길 - 6.7단지 방면 자연대로(우회전) -
+                            영종대로 방면 삼거리(좌회전) - 은하수로(우회전) - 은하수로 29번길 (우회전) - 호텔 도착
+                        </div>
+                        <div class="sh_small c-black title">
+                            ▶인천공항에서 출발 시
+                        </div>
+                        <div class="sh_small c-black">
+                            공항로 - 신불IC에서 영종IC(송도)방면 - 영종해안남로 - ‘영종IC, 송도, 인천대교’ 방면(좌회전) - 하늘대로 - 그린나래지하차도 진입(하늘대로) - 해찬나래지하차도 오른쪽 옆 길 -
+                            6.7단지 방면 자연대로(우회전) - 영종대로 방면 삼거리(좌회전) - 은하수로(우회전) - 은하수로 29번길 (우회전) - 호텔 도착
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="value_map_info_item">
+                <div class="value_map_info_item_wrap">
+                    <p><strong>공항철도 이용 시</strong></p>
+                    <div class="sh_small_wrapper">
+                        <div class="sh_small c-black title">
+                            ▶서울역 - 영종역 (첫차 05:20, 막차 24:00)
+                        </div>
+                        <div class="sh_small c-black title">
+                            ▶영종역 - 서울역 (첫차 05:20, 막차 23:57)
+                        </div>
+                        <div class="sh_small c-black">
+                            - 직통열차 이용 시 43분 소요 / 일반열차 이용 시 53분 소요
+                        </div>
+                        <div class="sh_small c-black title">
+                            ▶공항철도 영종역 - 호텔 : 약 6km (10분 거리)
+                        </div>
+                        <div class="sh_small c-black title">
+                            ▶자기부상열차 : 인천국제공항역 - 공항철도로 환승 - 영종역
+                        </div>
+                        <div class="sh_small">
+                            <a href="https://www.arex.or.kr/station/info.do?stnCd=077&menuNo=MN201603240000000001&langCd=ko_KR&device=Normal" target="_blank" rel="noopener noreferrer" class="subwaytime-btn">공항철도 시간표</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" value_map_info_item margin-bottom-30">
+                <div class="value_map_info_item_wrap">
+                    <p><strong>대중교통 이용 시 (영종역 / 인천공항)</strong></p>
+                    <div class="sh_small_wrapper">
+                        <div class="sh_small c-black title">▶공항철도 ‘영종역’ 1번 출구</div>
+                        <div class="sh_small c-black">- 3번 버스 승차 - ‘영종선착장정류장’ 하차 - 호텔 도착(도보3분)</div>
+                        <div class="sh_small c-black title">▶공항철도 ‘영종역’ 1번 출구</div>
+                        <div class="sh_small c-black">- 건너편 - 598번, 202번 버스 탑승 - 힐스테이트 하차. 건너편에서 203번 버스 환승 - ‘영종선착장’ 정류장 하차 - 호텔 도착(도보 3분)</div>
+                        <div class="sh_small c-black title">▶공항철도 ‘영종역’ 1번 출구</div>
+                        <div class="sh_small c-black">- 건너편 - 223번 버스 승차 - ‘중산중학교’ 하차. 건너편에서 203번 버스 환승 - ‘영종선착장’ 정류장 하차 - 호텔 도착(도보 3분)</div>
+                        <div class="sh_small c-black title">▶인천공항 3층</div>
+                        <div class="sh_small c-black">- 202번 버스 - ‘힐스테이트역’ 하차. 건너편에서 203번 버스 환승 - ‘영종선착장정류장’ 하차 - 호텔 도착(도보 3분)</div>
+                    </div>
+                </div>
+            </div>
+            <div class=" value_map_info_item margin-bottom-30">
+                <div class="value_map_info_item_wrap">
+                    <p><strong>주요거점 오시는 길</strong></p>
+                    <div class="sh_small_wrapper">
+                        <div class="sh_small c-black title">▶서울에서 오시는 길</div>
+                        <div class="sh_small c-black">- 자가용 (45분 소요) : 자유로 - 인천국제공항고속도로 - 자연대로 이용</div>
+                        <div class="sh_small c-black">- 대중교통 (2시간 소요) : 서울고속버스터미널 - 인천종합터미널 - 304번 버스(종합터미널) - 203번 버스(신명스카이뷰정문) - 영종선착장 정류장 하차 - 호텔 도착(도보3분)</div>
+                        <div class="sh_small c-black title">▶대전에서 오시는 길</div>
+                        <div class="sh_small c-black">- 자가용 (2시간 소요) : 경부고속도로 - 수도권제2순환고속도로(봉담-동탄) - 평택파주고속도로(수원-광명) 이용</div>
+                        <div class="sh_small c-black">- 대중교통 (3시간 20분 소요) : 대전복합터미널 - 인천종합터미널 - 304번 버스(종합터미널) - 203번 버스(신명스카이뷰정문) - 영종선착장 정류장 하차 - 호텔 도착(도보3분)</div>
+                        <div class="sh_small c-black title">▶대구에서 오시는 길</div>
+                        <div class="sh_small c-black">- 자가용 (3시간 소요) : 경부고속도로 - 중부내륙고속도로 - 영동고속도로 이용</div>
+                        <div class="sh_small c-black">- 대중교통 (3시간 40분 소요) : 동대구터미널 - 인천종합터미널 - 304번 버스(종합터미널) - 203번 버스(신명스카이뷰정문) - 영종선착장 정류장 하차 - 호텔 도착(도보3분)</div>
+                        <div class="sh_small c-black title">▶광주에서 오시는 길</div>
+                        <div class="sh_small c-black">- 자가용 (3시간 20분 소요) : 호남고속도로 - 서해안고속도로 - 평택시흥고속도로 이용</div>
+                        <div class="sh_small c-black">- 대중교통 (3시간 30분 소요) : 광주종합버스터미널 - 인천종합터미널 - 304번 버스(종합터미널) - 203번 버스(신명스카이뷰정문) - 영종선착장 정류장 하차 - 호텔 도착(도보3분)</div>
+                        <div class="sh_small c-black title">▶부산에서 오시는 길</div>
+                        <div class="sh_small c-black">- 자가용 (4시간 20분 소요) : 경부고속도로 - 상주영천고속도로 - 중부내륙고속도로 - 영동고속도로 이용</div>
+                        <div class="sh_small c-black">- 대중교통 (4시간 소요) : 부산종합버스터미널 - 인천종합터미널 - 304번 버스(종합터미널) - 203번 버스(신명스카이뷰정문) - 영종선착장 정류장 하차 - 호텔 도착(도보3분)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @@include('src/template/include/_footer.html')
+</body>
+
+</html>

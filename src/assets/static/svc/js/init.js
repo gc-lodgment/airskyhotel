@@ -16,12 +16,13 @@ $(document).on('ready', function () {
 function vidWH(){ 
     var winWid = $(window).width(),
         winHt = $(window).height(),
-        vid = $('.vid-wrap'),
+        // vid = $('.vid-wrap'),
+        vid = $('.slider_section.main-visual'),
         evtPop = $('.event_pop'),
         evtPopWid = evtPop.width();
         
     $('.header').addClass('main');
-    vid.css({'width' : winWid+'px', 'height' : winHt+'px'}); 
+    // vid.css({'width' : winWid+'px', 'height' : winHt+'px'}); 
     
     if( winWid <= '991' ){
         //console.log('m');
