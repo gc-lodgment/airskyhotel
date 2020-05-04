@@ -8,12 +8,12 @@
     <div class="sub value_map">
         <div class="sub_top_menu">
             <h4 class="page_title">오시는길</h4>
-            <h6 class="page_sub_title">아름다운 푸른 동해가 호텔 바로 앞에 펼쳐져 있는 에어스카이호텔로 초대합니다.</h6>
+            <h6 class="page_sub_title">아름답고 푸른 바다가 호텔 바로 앞에 펼쳐져 있는 에어스카이호텔로 초대합니다.</h6>
             <ul class="menu_wrap container">
                 <!-- 해당 탭 url일 경우, 클래스 active -->
                 <li class="menu_item"><a href="/main/about">호텔소개</a></li>
                 <li class="menu_item"><a href="/main/factsheet">시설개요</a></li>
-                <li class="menu_item"><a href="/main/map">오시는길</a></li>
+                <li class="menu_item active"><a href="/main/map">오시는길</a></li>
                 <!-- <li class="menu_item"><a href="/main/park">주차장 이용안내</a></li> -->
             </ul>
         </div>

@@ -1,44 +1,40 @@
-@@include('src/template/include/_head.html')
+	<link rel="stylesheet" type="text/css" href="<?=base_static?>/svc/css/jquery.bxslider.css" />
+<!--
+	<script src="http://www.youtube.com/player_api"></script>
+	-->
+	<script type="text/javascript" src="<?=base_static?>/svc/js/init.js"></script>
+	<script type="text/javascript" src="<?=base_static?>/svc/js/init_vid.js"></script>
+	<script type="text/javascript" src="<?=base_static?>/svc/js/init_player.js"></script>
 
-<link rel="stylesheet" type="text/css" href="/static/svc/css/jquery.bxslider.css" />
 
-<!--<script type="text/javascript" src="http://static.seabay.co.kr/svc/js/jquery.mb.YTPlayer.min.js"></script>-->
-<!--<script type="text/javascript" src="/static/svc/js/jquery.mb.YTPlayer.min_custom.js"></script>-->
-<script src="http://www.youtube.com/player_api"></script>
-<!-- <script type="text/javascript" src="http://static.seabay.co.kr/svc/js/init.js"></script>
-<script type="text/javascript" src="http://static.seabay.co.kr/svc/js/init_vid.js"></script> -->
-<script type="text/javascript" src="/static/svc/js/init.js"></script>
-<!-- <script type="text/javascript" src="/static/svc/js/init_vid.js"></script> -->
-<!--<script type="text/javascript" src="/static/svc/js/init_test.js"></script>-->
-<!-- <script type="text/javascript" src="/static/svc/js/init_player.js"></script> -->
-<!-- <script type="text/javascript" src="http://static.seabay.co.kr/svc/js/init_player.js"></script> -->
-</head>
-
-<body class="page-home">
-
-    @@include('src/template/include/_header.html')
+	<div class="body"></div>
+    <br class="br_sub">
 
     <div class="main">
+		<script>
+			$(function() {
+				var nx = 54;
+				var ny = 125;
+				var dust_area = "중산동";
+
+				$.ajax({
+					type	:	"POST",
+					data	:	{"nx":nx, "ny":ny, "dust_area":dust_area},
+					url		:	"/common/weather_new.php",
+					success	:	function(data) {
+						$('.weather').html(data);
+					}
+				});
+			});
+		</script>
         <!-- 190917 날씨 추가 (190905 전달본) : 멀티클래스 추가 -->
-        <div class="weather vid">
-            <div class="area">
-                <div class="inner">
-                    <span class="s-1">2019.01.22 (화)</span>
-                    <span class="s-2">강릉의 오늘 <span class="t-1">▷</span> 맑음</span>
-                    <span class="s-3"><span class="big">7</span><span class="c">℃</span></span>
-                    <span class="s-4">
-                        <img src="http://img.hotelairsky.co.kr/svc/img/weather/finedust.png" alt="미세먼지">
-                        <span class="txt-dust">미세먼지 - <span class="grade">보통</span></span>
-                    </span>
-                </div>
-                <img src="http://img.hotelairsky.co.kr/svc/img/weather/clear.png" alt="날씨">
-            </div>
+        <div class="weather vid">            
         </div>
         <!-- //.weather -->
 
         <!-- 190917 영상 추가 -->
         <!-- <video id="vidM" playsinline="" webkit-playsinline="" preload="" autoplay="" muted="">
-            <source src="http://img.hotelairsky.co.kr/svc/img/main/seabay_mobile.mp4" type="video/mp4" />
+            <source src="<?=base_img?>/svc/img/main/seabay_mobile.mp4" type="video/mp4" />
         </video> -->
         <!-- <div class="vid-wrap">
             <div class="vid-bg"></div>
@@ -51,7 +47,7 @@
             </section>
 
             <div class="vid-txt-box">
-                <a href="javascript:;" class="vid-txt"><img src="http://img.hotelairsky.co.kr/svc/img/main/bg_main_txt.png" alt="에어스카이호텔 자세한 정보 보기" /></a>
+                <a href="javascript:;" class="vid-txt"><img src="<?=base_img?>/svc/img/main/bg_main_txt.png" alt="에어스카이호텔 자세한 정보 보기" /></a>
             </div>
 
         </div> -->
@@ -64,29 +60,29 @@
         <section class="slider_section main-visual">
             <div id="slider_main" class="slider_container smain">
                 <div data-u="slides" class="slides">
-                    <div><img data-u="image" class="main-visibility" src="http://img.hotelairsky.co.kr/svc/img/main/bg_01.jpg" alt="에어스카이호텔사진" /></div>
-                    <div><img data-u="image" class="main-visibility" src="http://img.hotelairsky.co.kr/svc/img/main/bg_02.jpg" alt="에어스카이호텔사진" /></div>
-                    <div><img data-u="image" class="main-visibility" src="http://img.hotelairsky.co.kr/svc/img/main/bg_03.jpg" alt="에어스카이호텔사진" /></div>
-                    <div><img data-u="image" class="main-visibility" src="http://img.hotelairsky.co.kr/svc/img/main/bg_04.jpg" alt="에어스카이호텔사진" /></div>
-                    <div><img data-u="image" class="main-visibility" src="http://img.hotelairsky.co.kr/svc/img/main/bg_05.jpg" alt="에어스카이호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/main/bg_01.jpg" alt="에어스카이호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/main/bg_02.jpg" alt="에어스카이호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/main/bg_03.jpg" alt="에어스카이호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/main/bg_04.jpg" alt="에어스카이호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/main/bg_05.jpg" alt="에어스카이호텔사진" /></div>
                 </div>
                 <span u="arrowleft" class="jssor-sprite arow-left" style="width: 21px; height: 32px; top: 200px; left: 20px;"></span>
                 <span u="arrowright" class="jssor-sprite arow-right" style="width: 21px; height: 32px; top: 200px; right: 20px"></span>
             </div>
             <div id="slider_mmain" class="slider_container mob">
                 <div data-u="slides" class="slides">
-                    <div><img data-u="image" class="main-visibility" src="http://img.hotelairsky.co.kr/svc/img/m/main/bg_01.jpg" alt="에어스카이호텔사진" /></div>
-                    <div><img data-u="image" class="main-visibility" src="http://img.hotelairsky.co.kr/svc/img/m/main/bg_02.jpg" alt="에어스카이호텔사진" /></div>
-                    <div><img data-u="image" class="main-visibility" src="http://img.hotelairsky.co.kr/svc/img/m/main/bg_03.jpg" alt="에어스카이호텔사진" /></div>
-                    <div><img data-u="image" class="main-visibility" src="http://img.hotelairsky.co.kr/svc/img/m/main/bg_04.jpg" alt="에어스카이호텔사진" /></div>
-                    <div><img data-u="image" class="main-visibility" src="http://img.hotelairsky.co.kr/svc/img/m/main/bg_05.jpg" alt="에어스카이호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/m/main/bg_01.jpg" alt="에어스카이호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/m/main/bg_02.jpg" alt="에어스카이호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/m/main/bg_03.jpg" alt="에어스카이호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/m/main/bg_04.jpg" alt="에어스카이호텔사진" /></div>
+                    <div><img data-u="image" class="main-visibility" src="<?=base_img?>/svc/img/m/main/bg_05.jpg" alt="에어스카이호텔사진" /></div>
                 </div>
                 <span u="arrowleft" class="jssor-sprite arow-left" style="width: 21px; height: 32px; top: 200px; left: 20px;"></span>
                 <span u="arrowright" class="jssor-sprite arow-right" style="width: 21px; height: 32px; top: 200px; right: 20px"></span>
             </div>
 
             <div class="vid-txt-box">
-                <a href="javascript:;" class="vid-txt"><img src="http://img.hotelairsky.co.kr/svc/img/main/bg_main_txt.png" alt="에어스카이호텔 자세한 정보 보기" /></a>
+                <a href="javascript:;" class="vid-txt"><img src="<?=base_img?>/svc/img/main/bg_main_txt.png" alt="에어스카이호텔 자세한 정보 보기" /></a>
             </div>
         </section>
 
@@ -148,7 +144,7 @@
                             <a href="#none" class="link nope">
                                 <span class="c-theme fw-b">AIRSKY TOPIC</span>
                                 <span class="hidden-smxs c-black">
-                                    <img src="http://img.hotelairsky.co.kr/svc/img/icon/ico_sb.png" alt="설명" class="ico-sb">
+                                    <img src="<?=base_img?>/svc/img/icon/ico_sb.png" alt="설명" class="ico-sb">
                                     <span class="sm">따뜻한 하늘과 드넓은 오션뷰, 수려한 주변경관을 만나보세요.</span>
                                 </span>
                                 <div class="ico-plus-cont theme">
@@ -167,16 +163,16 @@
                     <div class="topic-body">
                         <div class="title hidden-mdlg">
                             <a href="#none" class="nope c-theme">
-                                <img src="http://img.hotelairsky.co.kr/svc/img/icon/ico_sb.png" alt="설명" class="ico-sb">
+                                <img src="<?=base_img?>/svc/img/icon/ico_sb.png" alt="설명" class="ico-sb">
                                 <span class="sm">매일 아침을 아름다운 동해의 일출로 시작하세요.</span>
                             </a>
                         </div>
                         <div class="bx-box">
                             <ul class="bx-s fnBxSlider">
-                                <li class="item"><a href="javascript:;" class="nope"><img src="http://img.hotelairsky.co.kr/svc/img/main/topic_01.jpg" alt="호텔사진"></a></li>
-                                <li class="item"><a href="javascript:;" class="nope"><img src="http://img.hotelairsky.co.kr/svc/img/main/topic_02.jpg" alt="호텔사진"></a></li>
-                                <li class="item"><a href="javascript:;" class="nope"><img src="http://img.hotelairsky.co.kr/svc/img/main/topic_03.jpg" alt="호텔사진"></a></li>
-                                <li class="item"><a href="javascript:;" class="nope"><img src="http://img.hotelairsky.co.kr/svc/img/main/topic_04.jpg" alt="호텔사진"></a></li>
+                                <li class="item"><a href="javascript:;" class="nope"><img src="<?=base_img?>/svc/img/main/topic_01.jpg" alt="호텔사진"></a></li>
+                                <li class="item"><a href="javascript:;" class="nope"><img src="<?=base_img?>/svc/img/main/topic_02.jpg" alt="호텔사진"></a></li>
+                                <li class="item"><a href="javascript:;" class="nope"><img src="<?=base_img?>/svc/img/main/topic_03.jpg" alt="호텔사진"></a></li>
+                                <li class="item"><a href="javascript:;" class="nope"><img src="<?=base_img?>/svc/img/main/topic_04.jpg" alt="호텔사진"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -218,9 +214,9 @@
                 <div class="rooms-wrap">
                     <ul class="rooms-list">
                         <li class="rooms-item">
-                            <a href="./rooms/detail_new/std_db.html" class="link">
+                            <a href="./rooms/detail_new/std_db.php" class="link">
                                 <div class="content">
-                                    <figure><img src="http://img.hotelairsky.co.kr/svc/img/main/room_01.jpg" alt="스탠다드룸"></figure>
+                                    <figure><img src="<?=base_img?>/svc/img/main/room_01.jpg" alt="스탠다드룸"></figure>
                                 </div>
                                 <div class="title cf">
                                     <span class="lg">스탠다드룸</span>
@@ -232,9 +228,9 @@
                             </a>
                         </li>
                         <li class="rooms-item">
-                            <a href="./rooms/detail_new/dx_oc_db.html" class="link">
+                            <a href="./rooms/detail_new/dx_oc_db.php" class="link">
                                 <div class="content">
-                                    <figure><img src="http://img.hotelairsky.co.kr/svc/img/main/room_02.jpg" alt="디럭스룸"></figure>
+                                    <figure><img src="<?=base_img?>/svc/img/main/room_02.jpg" alt="디럭스룸"></figure>
                                 </div>
                                 <div class="title cf">
                                     <span class="lg">디럭스룸</span>
@@ -246,9 +242,9 @@
                             </a>
                         </li>
                         <li class="rooms-item">
-                            <a href="./rooms/detail_new/std_db.html" class="link">
+                            <a href="./rooms/detail_new/std_db.php" class="link">
                                 <div class="content">
-                                    <figure><img src="http://img.hotelairsky.co.kr/svc/img/main/room_03.jpg" alt="프리미어룸"></figure>
+                                    <figure><img src="<?=base_img?>/svc/img/main/room_03.jpg" alt="프리미어룸"></figure>
                                 </div>
                                 <div class="title cf">
                                     <span class="lg">프리미어룸</span>
@@ -260,9 +256,9 @@
                             </a>
                         </li>
                         <li class="rooms-item">
-                            <a href="./rooms/detail_new/dx_oc_db.html" class="link">
+                            <a href="./rooms/detail_new/dx_oc_db.php" class="link">
                                 <div class="content">
-                                    <figure><img src="http://img.hotelairsky.co.kr/svc/img/main/room_04.jpg" alt="스위트룸"></figure>
+                                    <figure><img src="<?=base_img?>/svc/img/main/room_04.jpg" alt="스위트룸"></figure>
                                 </div>
                                 <div class="title cf">
                                     <span class="lg">스위트룸</span>
@@ -284,9 +280,9 @@
                 <div class="facil-wrap">
                     <ul class="rooms-list">
                         <li class="rooms-item">
-                            <a href="./rooms/detail_new/std_db.html" class="link">
+                            <a href="./rooms/detail_new/std_db.php" class="link">
                                 <div class="content">
-                                    <figure><img src="http://img.hotelairsky.co.kr/svc/img/main/room_01.jpg" alt=""></figure>
+                                    <figure><img src="<?=base_img?>/svc/img/main/room_01.jpg" alt=""></figure>
                                 </div>
                                 <div class="title cf">
                                     <span class="lg">레스토랑</span>
@@ -295,9 +291,9 @@
                             </a>
                         </li>
                         <li class="rooms-item">
-                            <a href="./rooms/detail_new/dx_oc_db.html" class="link">
+                            <a href="./rooms/detail_new/dx_oc_db.php" class="link">
                                 <div class="content">
-                                    <figure><img src="http://img.hotelairsky.co.kr/svc/img/main/room_02.jpg" alt=""></figure>
+                                    <figure><img src="<?=base_img?>/svc/img/main/room_02.jpg" alt=""></figure>
                                 </div>
                                 <div class="title cf">
                                     <span class="lg">컨퍼런스룸</span>
@@ -306,9 +302,9 @@
                             </a>
                         </li>
                         <li class="rooms-item">
-                            <a href="./rooms/detail_new/std_db.html" class="link">
+                            <a href="./rooms/detail_new/std_db.php" class="link">
                                 <div class="content">
-                                    <figure><img src="http://img.hotelairsky.co.kr/svc/img/main/room_03.jpg" alt=""></figure>
+                                    <figure><img src="<?=base_img?>/svc/img/main/room_03.jpg" alt=""></figure>
                                 </div>
                                 <div class="title cf">
                                     <span class="lg">세미나룸</span>
@@ -317,9 +313,9 @@
                             </a>
                         </li>
                         <li class="rooms-item">
-                            <a href="./rooms/detail_new/dx_oc_db.html" class="link">
+                            <a href="./rooms/detail_new/dx_oc_db.php" class="link">
                                 <div class="content">
-                                    <figure><img src="http://img.hotelairsky.co.kr/svc/img/main/room_04.jpg" alt=""></figure>
+                                    <figure><img src="<?=base_img?>/svc/img/main/room_04.jpg" alt=""></figure>
                                 </div>
                                 <div class="title cf">
                                     <span class="lg">편의점</span>
@@ -339,9 +335,9 @@
                     <div class="facil-wrap surroundings-wrap">
                         <ul class="rooms-list">
                             <li class="rooms-item">
-                                <a href="./rooms/detail_new/std_db.html" class="link">
+                                <a href="./rooms/detail_new/std_db.php" class="link">
                                     <div class="content">
-                                        <figure><img src="http://img.hotelairsky.co.kr/svc/img/main/surround_01.jpg" alt=""></figure>
+                                        <figure><img src="<?=base_img?>/svc/img/main/surround_01.jpg" alt=""></figure>
                                     </div>
                                     <div class="text">
                                         월미테마파크<br>
@@ -350,9 +346,9 @@
                                 </a>
                             </li>
                             <li class="rooms-item">
-                                <a href="./rooms/detail_new/dx_oc_db.html" class="link">
+                                <a href="./rooms/detail_new/dx_oc_db.php" class="link">
                                     <div class="content">
-                                        <figure><img src="http://img.hotelairsky.co.kr/svc/img/main/surround_02.jpg" alt=""></figure>
+                                        <figure><img src="<?=base_img?>/svc/img/main/surround_02.jpg" alt=""></figure>
                                     </div>
                                     <div class="text">
                                         영종씨사이드파크<br>
@@ -361,9 +357,9 @@
                                 </a>
                             </li>
                             <li class="rooms-item">
-                                <a href="./rooms/detail_new/std_db.html" class="link">
+                                <a href="./rooms/detail_new/std_db.php" class="link">
                                     <div class="content">
-                                        <figure><img src="http://img.hotelairsky.co.kr/svc/img/main/surround_03.jpg" alt=""></figure>
+                                        <figure><img src="<?=base_img?>/svc/img/main/surround_03.jpg" alt=""></figure>
                                     </div>
                                     <div class="text">
                                         BMW 드라이빙센터<br>
@@ -372,9 +368,9 @@
                                 </a>
                             </li>
                             <li class="rooms-item">
-                                <a href="./rooms/detail_new/dx_oc_db.html" class="link">
+                                <a href="./rooms/detail_new/dx_oc_db.php" class="link">
                                     <div class="content">
-                                        <figure><img src="http://img.hotelairsky.co.kr/svc/img/main/surround_04.jpg" alt=""></figure>
+                                        <figure><img src="<?=base_img?>/svc/img/main/surround_04.jpg" alt=""></figure>
                                     </div>
                                     <div class="text">
                                         스카이72 골프<br>
@@ -389,25 +385,3 @@
         </section>
 
     </div>
-
-    <!-- 팝업 -->
-    <!-- @@include('src/template/include/popup/_event.html') -->
-
-    @@include('src/template/include/_footer.html')
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script>
-        $(function () {
-            $(".fnBxSlider").bxSlider({
-                // mode: 'fade',
-                auto: true,
-                autoControls: false,
-                speed: 500,
-                duration: 6000,
-                touchEnabled: false //이미지 하나여서 터치 스와이프 막음
-            });
-        });
-    </script>
-</body>
-
-</html>

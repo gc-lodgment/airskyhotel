@@ -8,10 +8,10 @@
     <div class="sub about_value">
         <div class="sub_top_menu">
             <h4 class="page_title">호텔소개</h4>
-            <h6 class="page_sub_title">아름다운 푸른 동해가 호텔 바로 앞에 펼쳐져 있는 에어스카이호텔로 초대합니다.</h6>
+            <h6 class="page_sub_title">아름답고 푸른 바다가 호텔 바로 앞에 펼쳐져 있는 에어스카이호텔로 초대합니다.</h6>
             <ul class="menu_wrap container">
                 <!-- 해당 탭 url일 경우, 클래스 active -->
-                <li class="menu_item"><a href="/main/about/index.php">호텔소개</a></li>
+                <li class="menu_item active"><a href="/main/about/index.php">호텔소개</a></li>
                 <li class="menu_item"><a href="/main/factsheet/index.php">시설개요</a></li>
                 <li class="menu_item"><a href="/main/map/index.php">오시는길</a></li>
                 <!-- <li class="menu_item"><a href="/brd/list/notice.php">주차장 이용안내</a></li> -->
@@ -54,7 +54,7 @@
                                 <img src="<?=base_img?>/svc/img/about/about_02.jpg">
                                 <div class="title">AIRSKY HOTEL</div>
                                 <div class="content">
-                                    에어스카이호텔은 총 000개의 객실을 보유하고 있으며 스탠다드룸, 디럭스룸, 프리미어룸 그리고 스위트룸 등으로 구성되어 있습니다.
+                                    에어스카이호텔은 총 475개의 객실을 보유하고 있으며 스탠다드룸, 디럭스룸, 프리미어룸 그리고 스위트룸 등으로 구성되어 있습니다.
                                 </div>
                             </div>
                         </li>

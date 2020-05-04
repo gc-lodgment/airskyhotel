@@ -12,7 +12,7 @@
             <ul class="menu_wrap container">
                 <!-- 해당 탭 url일 경우, 클래스 active -->
                 <li class="menu_item"><a href="/main/about/index.php">호텔소개</a></li>
-                <li class="menu_item"><a href="/main/factsheet/index.php">시설개요</a></li>
+                <li class="menu_item active"><a href="/main/factsheet/index.php">시설개요</a></li>
                 <li class="menu_item"><a href="/main/map/index.php">오시는길</a></li>
                 <!-- <li class="menu_item"><a href="/brd/list/notice.php">주차장 이용안내</a></li> -->
             </ul>

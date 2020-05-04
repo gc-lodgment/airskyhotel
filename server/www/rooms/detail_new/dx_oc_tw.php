@@ -119,7 +119,7 @@
                                     <li><a href="/rooms/detail_new/dx_oc_db.php">디럭스 오션 더블</a></li>
                                     <li><a href="/rooms/detail_new/dx_oc_tw.php">디럭스 오션 트윈</a></li>
                                     <li><a href="/rooms/detail_new/dx_oc_ondol.php">디럭스 오션 온돌</a></li>
-                                    <li><a href="/rooms/detail_new/pr_oc_db.php">프리미어 오션 온돌</a></li>
+                                    <li><a href="/rooms/detail_new/pr_oc_db.php">프리미어 오션 더블</a></li>
                                     <li><a href="/rooms/detail_new/pr_oc_tw.php">프리미어 오션 트윈</a></li>
                                     <li><a href="/rooms/detail_new/pr_oc_famtw.php">프리미어 오션 패밀리 트윈</a></li>
                                     <li><a href="/rooms/detail_new/suite.php">스위트</a></li>
@@ -189,7 +189,7 @@
                 <li class="menu_item"><a href="std_db.php">스탠다드 더블</a></li>
                 <li class="menu_item"><a href="std_tw.php">스탠다드 트윈</a></li>
                 <li class="menu_item"><a href="dx_oc_db.php">디럭스 오션 더블</a></li>
-                <li class="menu_item"><a href="dx_oc_tw.php">디럭스 오션 트윈</a></li>
+                <li class="menu_item active"><a href="dx_oc_tw.php">디럭스 오션 트윈</a></li>
                 <li class="menu_item"><a href="dx_oc_ondol.php">디럭스 오션 온돌</a></li>
                 <!-- <li class="menu_item hidden-mdlg"><a href="dx_familytwin.php">디럭스 패밀리트윈</a></li> -->
             </ul>
@@ -215,16 +215,7 @@
                             <input type="text" name="checkOut" class="datepicker_ot" value="2019-06-19" placeholder="Check out" readonly />
                             <i class="icon-12 label"></i>
                         </div>
-                        <div class="s_input">
-                            <input type="number" class="set_period_date" value="1" min="1" onKeyup="number_check(this)" />
-                            <p class="ad_form_label">박</p>
-                        </div>
-                        <div class="s_input">
-                            <input type="number" name="rooms" value="1" min="1" onKeyup="number_check(this)" />
-                            <p class="ad_form_label">객실</p>
-                            <input type="hidden" name="adults" value="1" />
-                            <input type="hidden" name="children" value="" />
-                        </div>
+                        
                         <div class="s_input">
                             <button type="button" class="s_btn_gray b_100" onclick="on_submit()"><i class="icon-113"></i> SEARCH</button>
                         </div>

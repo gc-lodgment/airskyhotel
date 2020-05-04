@@ -1,15 +1,9 @@
-@@include('src/template/include/_head.html')
+	<link rel="stylesheet" type="text/css" href="http://static.hotelairsky.co.kr/svc/css/group/init.css">
 
-<link rel="stylesheet" type="text/css" href="/static/svc/css/group/init.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+	<div class="body"></div>
+    <br class="br_sub">
 
-</head>
-
-<body class="">
-
-    @@include('src/template/include/_header.html')
-
-    <div class="contents group-contents">
+	<div class="contents group-contents">
         <div class="sub">
             <div class="sub_top_menu">
                 <h4 class="page_title">단체문의</h4>
@@ -27,7 +21,7 @@
                                     <strong>단체행사를 계획하고 있으신가요?</strong><br> 모든것이 완벽한 에어스카이호텔에서 <br>아름다운 추억을 만들어 드립니다.
                                 </p>
                                 <div class="d-map">
-                                    <img src="http://img.hotelairsky.co.kr/svc/img/group/map.jpg" alt="주변지도" />
+                                    <img src="<?=base_img?>/svc/img/group/map.jpg" alt="주변지도" />
                                 </div>
                                 <p class="p-2">
                                     에어스카이호텔에서는 인천항의 일출, 일몰전망은 물론
@@ -38,7 +32,7 @@
                                 </p>
                                 <hr class="hidden-mdlg">
                                 <p class="txt_wr">
-                                    에어스카이호텔은 400객실의 최신형 대형호텔이며<br>
+                                    에어스카이호텔은 475객실의 최신형 대형호텔이며<br>
                                     1,200명까지 동시 이용이 가능합니다.
                                 </p>
                                 <p class="area-btn" id="group_mobile" style="cursor:pointer"><a class="" onclick="faq_move()">단체 문의하기 <span class="ic-rArrow"></span></a></p>
@@ -50,7 +44,7 @@
                             <p class="p0">편안하고 아늑함을 마음 껏 누릴 수 있는 공간</p>
                             <ul class="ul-list cf" id="roomList">
                                 <li class="li-item nth-1">
-                                    <figure><img src="http://img.hotelairsky.co.kr/svc/img/group/room_01.jpg" alt="디럭스 온돌">
+                                    <figure><img src="<?=base_img?>/svc/img/group/room_01.jpg" alt="디럭스 온돌">
                                     </figure>
                                     <div class="d-row-1">
                                         <div class="s-name">
@@ -61,7 +55,7 @@
                                     </div>
                                 </li>
                                 <li class="li-item nth-2">
-                                    <figure><img src="http://img.hotelairsky.co.kr/svc/img/group/room_02.jpg" alt="디럭스 온돌">
+                                    <figure><img src="<?=base_img?>/svc/img/group/room_02.jpg" alt="디럭스 온돌">
                                     </figure>
                                     <div class="d-row-1">
                                         <div class="s-name">
@@ -72,7 +66,7 @@
                                     </div>
                                 </li>
                                 <li class="li-item nth-3">
-                                    <figure><img src="http://img.hotelairsky.co.kr/svc/img/group/room_03.jpg" alt="디럭스 더블">
+                                    <figure><img src="<?=base_img?>/svc/img/group/room_03.jpg" alt="디럭스 더블">
                                     </figure>
                                     <div class="d-row-1">
                                         <div class="s-name">
@@ -83,7 +77,7 @@
                                     </div>
                                 </li>
                                 <li class="li-item nth-4">
-                                    <figure><img src="http://img.hotelairsky.co.kr/svc/img/group/room_04.jpg" alt="디럭스 키즈">
+                                    <figure><img src="<?=base_img?>/svc/img/group/room_04.jpg" alt="디럭스 키즈">
                                     </figure>
                                     <div class="d-row-1">
                                         <div class="s-name">
@@ -103,56 +97,56 @@
                                 <li class="li-item">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/restaurant.jpg" alt="레스토랑">
+                                        <img src="<?=base_img?>/svc/img/group/restaurant.jpg" alt="레스토랑">
                                         <figcaption>레스토랑</figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/conference.jpg" alt="컨퍼런스룸">
+                                        <img src="<?=base_img?>/svc/img/group/conference.jpg" alt="컨퍼런스룸">
                                         <figcaption>컨퍼런스룸</figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/seminar.jpg" alt="세미나룸">
+                                        <img src="<?=base_img?>/svc/img/group/seminar.jpg" alt="세미나룸">
                                         <figcaption>세미나룸</figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/convenience.jpg" alt="편의점">
+                                        <img src="<?=base_img?>/svc/img/group/convenience.jpg" alt="편의점">
                                         <figcaption>편의점</figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/lobby.jpg" alt="로비">
+                                        <img src="<?=base_img?>/svc/img/group/lobby.jpg" alt="로비">
                                         <figcaption>로비</figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/info.jpg" alt="인포메이션">
+                                        <img src="<?=base_img?>/svc/img/group/info.jpg" alt="인포메이션">
                                         <figcaption>인포메이션</figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/businesscenter.jpg" alt="비즈니스 센터">
+                                        <img src="<?=base_img?>/svc/img/group/businesscenter.jpg" alt="비즈니스 센터">
                                         <figcaption>비즈니스 센터</figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/oceanview.jpg" alt="객실조망">
+                                        <img src="<?=base_img?>/svc/img/group/oceanview.jpg" alt="객실조망">
                                         <figcaption>객실조망</figcaption>
                                     </figure>
                                 </li>
@@ -208,28 +202,28 @@
                                 <li class="li-item">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/tour/nature_01.jpg" alt="주변관광지사진">
+                                        <img src="<?=base_img?>/svc/img/group/tour/nature_01.jpg" alt="주변관광지사진">
                                         <figcaption>마시안해변<br><span class="f-sm">차량 20분<span class="hidden-smxs"> 소요 (15km 거리)</span></span></figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item type-2">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/tour/nature_02.jpg" alt="주변관광지사진">
+                                        <img src="<?=base_img?>/svc/img/group/tour/nature_02.jpg" alt="주변관광지사진">
                                         <figcaption>무의도<br><span class="f-sm">차량 25분<span class="hidden-smxs"> 소요 (17km 거리)</span></span></figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item type-2">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/tour/nature_03.jpg" alt="주변관광지사진">
+                                        <img src="<?=base_img?>/svc/img/group/tour/nature_03.jpg" alt="주변관광지사진">
                                         <figcaption>왕상해수욕장<br><span class="f-sm">차량 26분<span class="hidden-smxs"> 소요 (18km 거리)</span></span></figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item type-2">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/tour/nature_04.jpg" alt="주변관광지사진">
+                                        <img src="<?=base_img?>/svc/img/group/tour/nature_04.jpg" alt="주변관광지사진">
                                         <figcaption>을왕리해수욕장<br><span class="f-sm">차량 26분<span class="hidden-smxs"> 소요 (18km 거리)</span></span></figcaption>
                                     </figure>
                                 </li>
@@ -239,28 +233,28 @@
                                 <li class="li-item type-2">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/tour/activities_01.jpg" alt="주변관광지사진">
+                                        <img src="<?=base_img?>/svc/img/group/tour/activities_01.jpg" alt="주변관광지사진">
                                         <figcaption>팔미도유람선<br><span class="f-sm">차량 40분<span class="hidden-smxs"> 소요 (53km 거리)</span></span></figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item type-2">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/tour/activities_02.jpg" alt="주변관광지사진">
+                                        <img src="<?=base_img?>/svc/img/group/tour/activities_02.jpg" alt="주변관광지사진">
                                         <figcaption>영종레일바이크<br><span class="f-sm">도보 4분<span class="hidden-smxs"> 소요 (400m 거리)</span></span></figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item type-2">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/tour/activities_03.jpg" alt="주변관광지사진">
+                                        <img src="<?=base_img?>/svc/img/group/tour/activities_03.jpg" alt="주변관광지사진">
                                         <figcaption>월미테마파크<br><span class="f-sm">차량 30분<span class="hidden-smxs"> 소요 (2.5km 거리)</span></span></figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item type-2">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/tour/activities_04.jpg" alt="주변관광지사진">
+                                        <img src="<?=base_img?>/svc/img/group/tour/activities_04.jpg" alt="주변관광지사진">
                                         <figcaption>BMW드라이빙센터<br><span class="f-sm">차량 15분<span class="hidden-smxs"> 소요 (11km 거리)</span></span></figcaption>
                                     </figure>
                                 </li>
@@ -270,28 +264,28 @@
                                 <li class="li-item type-2">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/tour/facil_01.jpg" alt="주변관광지사진">
+                                        <img src="<?=base_img?>/svc/img/group/tour/facil_01.jpg" alt="주변관광지사진">
                                         <figcaption>영종역사관<br><span class="f-sm">도보 4분<span class="hidden-smxs"> 소요 (350m 거리)</span></span></figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item type-2">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/tour/facil_02.jpg" alt="주변관광지사진">
+                                        <img src="<?=base_img?>/svc/img/group/tour/facil_02.jpg" alt="주변관광지사진">
                                         <figcaption>인천대교기념관<br><span class="f-sm">차량 15분<span class="hidden-smxs"> 소요 (6km 거리)</span></span></figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item type-2">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/tour/facil_03.jpg" alt="주변관광지사진">
+                                        <img src="<?=base_img?>/svc/img/group/tour/facil_03.jpg" alt="주변관광지사진">
                                         <figcaption>씨사이드파크<br><span class="f-sm">도보 4분<span class="hidden-smxs"> 소요 (350m 거리)</span></span></figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item type-2">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/tour/facil_04.jpg" alt="주변관광지사진">
+                                        <img src="<?=base_img?>/svc/img/group/tour/facil_04.jpg" alt="주변관광지사진">
                                         <figcaption>스카이72<br><span class="f-sm">차량 22분<span class="hidden-smxs"> 소요 (9km 거리)</span></span></figcaption>
                                     </figure>
                                 </li>
@@ -301,28 +295,28 @@
                                 <li class="li-item type-2">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/tour/etc_01.jpg" alt="주변관광지사진">
+                                        <img src="<?=base_img?>/svc/img/group/tour/etc_01.jpg" alt="주변관광지사진">
                                         <figcaption>영종도 하늘공원<br><span class="f-sm">차량 16분<span class="hidden-smxs"> 소요 (14km 거리)</span></span></figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item type-2">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/tour/etc_02.jpg" alt="주변관광지사진">
+                                        <img src="<?=base_img?>/svc/img/group/tour/etc_02.jpg" alt="주변관광지사진">
                                         <figcaption>용궁사<br><span class="f-sm">차량 12분<span class="hidden-smxs"> 소요 (4.5km 거리)</span></span></figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item type-2">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/tour/etc_03.jpg" alt="주변관광지사진">
+                                        <img src="<?=base_img?>/svc/img/group/tour/etc_03.jpg" alt="주변관광지사진">
                                         <figcaption>구읍뱃터<br><span class="f-sm">차량 5분<span class="hidden-smxs"> 소요 (1.5km 거리)</span></span></figcaption>
                                     </figure>
                                 </li>
                                 <li class="li-item nth-m2">
                                     <figure>
                                         <span class="s-bg"></span>
-                                        <img src="http://img.hotelairsky.co.kr/svc/img/group/tour/etc_04.jpg" alt="주변관광지사진">
+                                        <img src="<?=base_img?>/svc/img/group/tour/etc_04.jpg" alt="주변관광지사진">
                                         <figcaption>차이나타운<br><span class="f-sm">차량 40분<span class="hidden-smxs"> 소요 (33km 거리)</span></span></figcaption>
                                     </figure>
                                 </li>
@@ -539,44 +533,137 @@
             </div>
         </div>
 
-        <script>
-            $(function () {
-                $.fn.datepicker.dates['ko'] = {
-                    days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-                    daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-                    daysMin: ["일", "월", "화", "수", "목", "금", "토"],
-                    months: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
-                    monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-                    today: "Today",
-                    clear: "Clear",
-                    format: "yyyy-mm-dd",
-                    titleFormat: "MM yyyy년",
-                    weekStart: 0,
-                };
-                var opt = {
-                    format: 'yyyy-mm-dd',
-                    language: 'ko',
-                    autoclose: !0,
-                    startDate: get_today()
-                }
-                $('.sdate').datepicker(opt);
-                $('#qna-list > li').on('click', function () {
-                    var idx = $(this).index();
-                    $(this).toggleClass('on').siblings().removeClass('on');
-                });
-            })
+<?php
+$enddate = date("Y-m-d", strtotime(date("Y-m-d")." + 1day"));
+?>
 
-            function faq_move() {
-                $('html, body').stop().animate({
-                    //scrollTop: $($_anchor.attr('href')).offset().top - 150
-                    scrollTop: ($(".etc-sec").offset().top - $('#gnb-header').height() - 25) //150대신 $('#gnb-header').height()-25 으로 적용해주세요!
-                }, 800);
-                event.preventDefault();
-            }
-        </script>
-    </div>
+	<script type="text/javascript">
 
-    @@include('src/template/include/_footer.html')
-</body>
+		$(function() {
+			$.fn.datepicker.dates['ko'] = {
+				days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+				daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+				daysMin: ["일","월","화","수","목","금","토"],
+				months: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+				monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+				today: "Today",
+				clear: "Clear",
+				format: "yyyy-mm-dd",
+				titleFormat: "MM yyyy년",
+				weekStart: 0,
+			};
+			var opt = {
+				format: 'yyyy-mm-dd',
+				language: 'ko',
+				autoclose: !0,
+				startDate: get_today()
+			}
+			$('.sdate').datepicker(opt);
 
-</html>
+			$('#qna-list > li').on('click', function () {
+				var idx = $(this).index();
+				$(this).toggleClass('on').siblings().removeClass('on');
+			});
+		});
+
+		function faq_move() {
+			$('html, body').stop().animate({
+				//scrollTop: $($_anchor.attr('href')).offset().top - 150
+				scrollTop: ($(".etc-sec").offset().top - $('#gnb-header').height() - 25) //150대신 $('#gnb-header').height()-25 으로 적용해주세요!
+			}, 800);
+			event.preventDefault();
+		}
+
+		function n_sum(){
+			var value1 = $('input[name=person_man]').val();
+			var value2 = $('input[name=person_her]').val();
+
+			$.ajax({
+				url : "state.php",
+				type : "post",
+				data: "mode=person_sum&num1="+value1+"&num2="+value2+"",
+				success: function(data) {
+					$(".wd-6").val(data);
+				}
+			});
+		}
+		function popupOpen(itm) {
+			$(itm).show(); 
+			var itm; 
+			popCenter();
+			$(itm).on('scroll touchmove mousewheel', function(event){
+				event.preventDefault();
+				event.stopPropagation();
+				return false;
+			});
+		}
+		function popupClose(itm) {
+			$(itm).hide().off('scroll touchmove mousewheel');
+			//console.log('�リ린');
+		}
+
+		function form_check(){
+			if($("input[name='name']").val() == "") {
+				alert("예약자명은 필수 입력 사항입니다.");
+				$("input[name='name']").focus();
+			} else if($("input[name='email']").val() == "") {
+				alert("이메일은 필수 입력 사항입니다.");
+				$("input[name='email']").focus();
+			} else if($("input[name='tel1']").val() == "") {
+				alert("연락처는 필수 입력 사항입니다.");
+				$("input[name='tel1']").focus();
+			} else if($("input[name='tel2']").val() == "") {
+				alert("연락처는 필수 입력 사항입니다.");
+				$("input[name='tel2']").focus();
+			} else if($("input[name='tel3']").val() == "") {
+				alert("연락처는 필수 입력 사항입니다.");
+				$("input[name='tel3']").focus();
+			} else if (grecaptcha.getResponse() == ""){
+				alert("'로봇이 아닙니다.'를 체크해주세요.");
+				return;
+			} else {
+			/*document.iform.submit();*/
+				$("input[name='robot_check']").val("Y");
+
+				$.ajax({
+					type	:	"POST",
+					data	:	$("#iform").serialize(),
+					url		:	"state.php",
+					success	:	function(e) {
+						var res = e.split("||");
+						if(res[0] == "SUCC") {
+							popupOpen('.group-popup');
+						} else if(res[0] == "FAIL" && res[2] != '') {
+							alert(res[1]);
+							$("input[name='"+res[2]+"'").focus();
+						}
+					}
+				})
+			}
+		}
+
+		//자동으로 컴마 붙는 스크립트
+		var rgx1 = /\D/g;
+		var rgx2 = /(\d+)(\d{3})/; 
+
+		function getNumber(obj){
+			
+			 var num01;
+			 var num02;
+			 num01 = obj.value;
+			 num02 = num01.replace(rgx1,"");
+			 num01 = setComma(num02);
+			 obj.value =  num01;
+
+		}
+		function setComma(inNum){
+			 
+			 var outNum;
+			 outNum = inNum; 
+			 while (rgx2.test(outNum)) {
+				  outNum = outNum.replace(rgx2, '$1' + ',' + '$2');
+			  }
+			 return outNum;
+
+		}
+	</script>
