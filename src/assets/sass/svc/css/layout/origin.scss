@@ -6507,7 +6507,8 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 }
 
 .room_detail .sub_top_menu .menu_wrap {
-    display: block;
+    display: flex;
+    justify-content: center;
     text-align: center;
     font-size: 0;
 }
@@ -6524,6 +6525,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 
 @media (max-width: 991px) {
     .room_detail .sub_top_menu .menu_wrap {
+        display: block;
         text-align: left;
     }
 
