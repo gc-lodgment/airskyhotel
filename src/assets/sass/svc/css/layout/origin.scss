@@ -4978,7 +4978,8 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 
 @media (max-width: 767px) {
     .factsheet .sub_top_menu .menu_wrap .menu_item {
-        width: 50%
+        // width: 50%
+        width: 33.33%;
     }
 }
 
@@ -6721,6 +6722,12 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     height: 80px;
     text-align: center;
     display: inline-block
+}
+
+.room_detail .detail .box_left .amenitys .amenity_box img {
+    position: relative;
+    top: -5px;
+    width: 35px;
 }
 
 .room_detail .detail .box_left .amenitys .amenity_box i {
