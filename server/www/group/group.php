@@ -51,7 +51,7 @@
                                             스탠다드 더블 / 트윈(22.8㎡)
                                             <p class="d-row">※ 기준인원 2인</p>
                                         </div>
-                                        <a href="javascript:;" class="a-btn">자세히 보기</a>
+                                        <a href="/rooms/?r=std_db" class="a-btn">자세히 보기</a>
                                     </div>
                                 </li>
                                 <li class="li-item nth-2">
@@ -62,7 +62,7 @@
                                             디럭스 오션 더블 / 트윈 / 온돌(22.8㎡)
                                             <p class="d-row">※ 기준인원 2인 / 최대인원 3인</p>
                                         </div>
-                                        <a href="javascript:;" class="a-btn">자세히 보기</a>
+                                        <a href="/rooms/?r=dx_oc_db" class="a-btn">자세히 보기</a>
                                     </div>
                                 </li>
                                 <li class="li-item nth-3">
@@ -73,7 +73,7 @@
                                             프리미어 오션 더블 / 트윈 / 패밀리(22.8㎡)
                                             <p class="d-row">※ 기준인원 2인 / 최대인원 3인</p>
                                         </div>
-                                        <a href="javascript:;" class="a-btn">자세히 보기</a>
+                                        <a href="/rooms/?r=pr_oc_db" class="a-btn">자세히 보기</a>
                                     </div>
                                 </li>
                                 <li class="li-item nth-4">
@@ -84,7 +84,7 @@
                                             스위트(43.3㎡)
                                             <p class="d-row">※ 기준인원 2인 / 최대인원 3인</p>
                                         </div>
-                                        <a href="javascript:;" class="a-btn">자세히 보기</a>
+                                        <a href="/rooms/?r=suite" class="a-btn">자세히 보기</a>
                                     </div>
                                 </li>
                             </ul>

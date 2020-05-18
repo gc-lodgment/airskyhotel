@@ -22,6 +22,7 @@ function vidWH(){
         evtPopWid = evtPop.width();
         
     $('.header').addClass('main');
+    // 메인 동영상 변경시 풀 사이즈 적용
     // vid.css({'width' : winWid+'px', 'height' : winHt+'px'}); 
     
     if( winWid <= '991' ){
@@ -53,7 +54,7 @@ function vidWH(){
     }
 	
     //텍스트 클릭시 이동
-    $('.vid-wrap, .slider_section.main-visual').find('.vid-txt').on('click', function(){
+    $('body').on('click', '.vid-wrap, .slider_section.main-visual .vid-txt', function(){
 		var mainRestTop =	$("#mainRest").offset().top,
             gnbH =	$(".gnb").height();
         var allVar;

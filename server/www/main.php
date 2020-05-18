@@ -82,55 +82,61 @@
             </div>
 
             <div class="vid-txt-box">
-                <a href="javascript:;" class="vid-txt"><img src="<?=base_img?>/svc/img/main/bg_main_txt.png" alt="에어스카이호텔 자세한 정보 보기" /></a>
+                <!-- <a href="javascript:;" class="vid-txt"><img src="<?=base_img?>/svc/img/main/bg_main_txt.png" alt="에어스카이호텔 자세한 정보 보기" /></a> -->
+                <div class="vid-txt">
+                    <a href="javascript:;" class="more-btn"><img src="http://img.hotelairsky.co.kr/svc/img/main/bg_main_txt.png" alt="자세한 정보 보기" class="more-btn-img"></a>
+                    <a href="http://hotelairsky.co.kr/reserve/" class="book-btn hidden-mdlg"><img src="http://img.hotelairsky.co.kr/svc/img/main/bt_main_reserv.png" alt="실시간 객실예약" class="book-btn-img"></a>
+                </div>
             </div>
         </section>
 
         <section id="mainRest" class="body_section">
             <div class="main_reservation">
                 <div class="container">
-                    <ul class="inputs ">
-                        <li>
-                            <span>실시간 객실예약</span>
-                        </li>
-                        <li>
-                            <div class="date_input">
-                                <input type="input" name="checkIn" value="2019-06-18" placeholder="Check in" readonly />
-                                <i class="icon-12"></i>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="date_input">
-                                <input type="input" name="checkOut" value="2019-06-19" placeholder="Check out" readonly />
-                                <i class="icon-12"></i>
-                            </div>
-                        </li>
-                        <!-- <li>
-                            <div class="date_input">
-                                <input type="number" name="rooms" value="1" min="1" onKeyup="number_check(this)"
-                                    placeholder="Check out" />
-                                <p class="ad_form_label">객실</p>
-                            </div>
-                            <input type="hidden" name="adults" value="1" />
-                            <input type="hidden" name="children" value="" />
-                        </li> -->
-                        <li>
-                            <button type="button" onclick="on_submit()">객실 알아보기</button>
-                        </li>
-                        <!-- <li>
-                            <div class="temp_data" title="오늘의 날씨">
-                                <div class="temp">
-                                    <span class="do">24</span>
-                                    <div class="tmx">↑<span>25</span> ↓<span></span></div>
-                                    <div class="day">Tue 18</div>
+                    <form method="get" name="myForm" id="myForm" action="/reserve">
+                        <ul class="inputs ">
+                            <li>
+                                <span>실시간 객실예약</span>
+                            </li>
+                            <li>
+                                <div class="date_input">
+                                    <input type="input" onclick="on_submit()" name="sub_sdate" value="<?=date("Y-m-d");?>" placeholder="Check in" readonly />
+                                    <i class="icon-12"></i>
                                 </div>
-                                <div class="sky">
-                                    <i class="icon-16"></i>
-                                    <span class="today">TODAY</span>
+                            </li>
+                            <li>
+                                <div class="date_input">
+                                    <input type="input" onclick="on_submit()" name="sub_edate" value="<?=date("Y-m-d",strtotime("+1 days"));?>" placeholder="Check out" readonly />
+                                    <i class="icon-12"></i>
                                 </div>
-                            </div>
-                        </li> -->
-                    </ul>
+                            </li>
+                            <!-- <li>
+                                <div class="date_input">
+                                    <input type="number" name="rooms" value="1" min="1" onKeyup="number_check(this)"
+                                        placeholder="Check out" />
+                                    <p class="ad_form_label">객실</p>
+                                </div>
+                                <input type="hidden" name="adults" value="1" />
+                                <input type="hidden" name="children" value="" />
+                            </li> -->
+                            <li>
+                                <button type="button" onclick="on_submit()">객실 알아보기</button>
+                            </li>
+                            <!-- <li>
+                                <div class="temp_data" title="오늘의 날씨">
+                                    <div class="temp">
+                                        <span class="do">24</span>
+                                        <div class="tmx">↑<span>25</span> ↓<span></span></div>
+                                        <div class="day">Tue 18</div>
+                                    </div>
+                                    <div class="sky">
+                                        <i class="icon-16"></i>
+                                        <span class="today">TODAY</span>
+                                    </div>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </form>
                 </div>
             </div>
         </section>
@@ -214,7 +220,7 @@
                 <div class="rooms-wrap">
                     <ul class="rooms-list">
                         <li class="rooms-item">
-                            <a href="./rooms/detail_new/std_db.php" class="link">
+                            <a href="./rooms/?r=std_db" class="link">
                                 <div class="content">
                                     <figure><img src="<?=base_img?>/svc/img/main/room_01.jpg" alt="스탠다드룸"></figure>
                                 </div>
@@ -228,7 +234,7 @@
                             </a>
                         </li>
                         <li class="rooms-item">
-                            <a href="./rooms/detail_new/dx_oc_db.php" class="link">
+                            <a href="./rooms/?r=dx_oc_db" class="link">
                                 <div class="content">
                                     <figure><img src="<?=base_img?>/svc/img/main/room_02.jpg" alt="디럭스룸"></figure>
                                 </div>
@@ -242,7 +248,7 @@
                             </a>
                         </li>
                         <li class="rooms-item">
-                            <a href="./rooms/detail_new/std_db.php" class="link">
+                            <a href="./rooms/?r=pr_oc_db" class="link">
                                 <div class="content">
                                     <figure><img src="<?=base_img?>/svc/img/main/room_03.jpg" alt="프리미어룸"></figure>
                                 </div>
@@ -256,7 +262,7 @@
                             </a>
                         </li>
                         <li class="rooms-item">
-                            <a href="./rooms/detail_new/dx_oc_db.php" class="link">
+                            <a href="./rooms/?r=suite" class="link">
                                 <div class="content">
                                     <figure><img src="<?=base_img?>/svc/img/main/room_04.jpg" alt="스위트룸"></figure>
                                 </div>
@@ -280,9 +286,9 @@
                 <div class="facil-wrap">
                     <ul class="rooms-list">
                         <li class="rooms-item">
-                            <a href="./rooms/detail_new/std_db.php" class="link">
+                            <a href="/facilities/restaurant.php" class="link">
                                 <div class="content">
-                                    <figure><img src="<?=base_img?>/svc/img/main/room_01.jpg" alt=""></figure>
+                                    <figure><img src="<?=base_img?>/svc/img/main/facil_01.jpg" alt=""></figure>
                                 </div>
                                 <div class="title cf">
                                     <span class="lg">레스토랑</span>
@@ -291,9 +297,9 @@
                             </a>
                         </li>
                         <li class="rooms-item">
-                            <a href="./rooms/detail_new/dx_oc_db.php" class="link">
+                            <a href="/facilities/conference.php" class="link">
                                 <div class="content">
-                                    <figure><img src="<?=base_img?>/svc/img/main/room_02.jpg" alt=""></figure>
+                                    <figure><img src="<?=base_img?>/svc/img/main/facil_02.jpg" alt=""></figure>
                                 </div>
                                 <div class="title cf">
                                     <span class="lg">컨퍼런스룸</span>
@@ -302,9 +308,9 @@
                             </a>
                         </li>
                         <li class="rooms-item">
-                            <a href="./rooms/detail_new/std_db.php" class="link">
+                            <a href="/facilities/seminar.php" class="link">
                                 <div class="content">
-                                    <figure><img src="<?=base_img?>/svc/img/main/room_03.jpg" alt=""></figure>
+                                    <figure><img src="<?=base_img?>/svc/img/main/facil_03.jpg" alt=""></figure>
                                 </div>
                                 <div class="title cf">
                                     <span class="lg">세미나룸</span>
@@ -313,9 +319,9 @@
                             </a>
                         </li>
                         <li class="rooms-item">
-                            <a href="./rooms/detail_new/dx_oc_db.php" class="link">
+                            <a href="/facilities/convenience.php" class="link">
                                 <div class="content">
-                                    <figure><img src="<?=base_img?>/svc/img/main/room_04.jpg" alt=""></figure>
+                                    <figure><img src="<?=base_img?>/svc/img/main/facil_04.jpg" alt=""></figure>
                                 </div>
                                 <div class="title cf">
                                     <span class="lg">편의점</span>
@@ -335,7 +341,7 @@
                     <div class="facil-wrap surroundings-wrap">
                         <ul class="rooms-list">
                             <li class="rooms-item">
-                                <a href="./rooms/detail_new/std_db.php" class="link">
+                                <a href="javascript:;" class="link">
                                     <div class="content">
                                         <figure><img src="<?=base_img?>/svc/img/main/surround_01.jpg" alt=""></figure>
                                     </div>
@@ -346,7 +352,7 @@
                                 </a>
                             </li>
                             <li class="rooms-item">
-                                <a href="./rooms/detail_new/dx_oc_db.php" class="link">
+                                <a href="javascript:;" class="link">
                                     <div class="content">
                                         <figure><img src="<?=base_img?>/svc/img/main/surround_02.jpg" alt=""></figure>
                                     </div>
@@ -357,7 +363,7 @@
                                 </a>
                             </li>
                             <li class="rooms-item">
-                                <a href="./rooms/detail_new/std_db.php" class="link">
+                                <a href="javascript:;" class="link">
                                     <div class="content">
                                         <figure><img src="<?=base_img?>/svc/img/main/surround_03.jpg" alt=""></figure>
                                     </div>
@@ -368,7 +374,7 @@
                                 </a>
                             </li>
                             <li class="rooms-item">
-                                <a href="./rooms/detail_new/dx_oc_db.php" class="link">
+                                <a href="javascript:;" class="link">
                                     <div class="content">
                                         <figure><img src="<?=base_img?>/svc/img/main/surround_04.jpg" alt=""></figure>
                                     </div>
